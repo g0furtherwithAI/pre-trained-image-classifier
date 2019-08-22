@@ -1,0 +1,172 @@
+Argument 1: uploaded_images/
+Argument 2: alexnet
+Argument 3: dognames.txt
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = alexnet 
+ dogfile = dognames.txt
+Inside Get Pet Labels
+
+Key is: Dog_01.jpg, Label is: dog
+Key is: Book_01.jpg, Label is: book
+Key is: Dog_02.jpg, Label is: dog
+Key is: Giraffe_01.jpg, Label is: giraffe
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                     Dog_01.jpg  label:                        dog
+ 2 key:                    Book_01.jpg  label:                       book
+ 3 key:                     Dog_02.jpg  label:                        dog
+ 4 key:                 Giraffe_01.jpg  label:                    giraffe
+Pet Label is ['dog']
+
+Img classification is ['english foxhound']
+
+Match not found
+
+Index: 0, Classifiers: ['english foxhound']
+
+Pet Label is ['book']
+
+Img classification is ['ballpoint', 'ballpoint pen', 'ballpen', 'biro']
+
+Match not found
+
+Index: 1, Classifiers: ['ballpoint', 'ballpoint pen', 'ballpen', 'biro']
+
+Pet Label is ['dog']
+
+Img classification is ['english foxhound']
+
+Match not found
+
+Index: 2, Classifiers: ['english foxhound']
+
+Pet Label is ['giraffe']
+
+Img classification is ['african hunting dog', 'hyena dog', 'cape hunting dog', 'lycaon pictus']
+
+Match not found
+
+Index: 3, Classifiers: ['african hunting dog', 'hyena dog', 'cape hunting dog', 'lycaon pictus']
+
+Inside Classify Images
+
+{'Dog_01.jpg': ['dog', "['english foxhound']", 0], 'Book_01.jpg': ['book', "['ballpoint', 'ballpoint pen', 'ballpen', 'biro']", 0], 'Dog_02.jpg': ['dog', "['english foxhound']", 0], 'Giraffe_01.jpg': ['giraffe', "['african hunting dog', 'hyena dog', 'cape hunting dog', 'lycaon pictus']", 0]}
+
+Filename= Dog_01.jpg 
+pet_image Label= dog 
+Classifier Label= ['english foxhound'] 
+match= 0
+
+Filename= Book_01.jpg 
+pet_image Label= book 
+Classifier Label= ['ballpoint', 'ballpoint pen', 'ballpen', 'biro'] 
+match= 0
+
+Filename= Dog_02.jpg 
+pet_image Label= dog 
+Classifier Label= ['english foxhound'] 
+match= 0
+
+Filename= Giraffe_01.jpg 
+pet_image Label= giraffe 
+Classifier Label= ['african hunting dog', 'hyena dog', 'cape hunting dog', 'lycaon pictus'] 
+match= 0
+
+     MATCH:
+
+ NOT A MATCH:
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:           ['english foxhound']
+
+                   Book_01.jpg: 
+Real:                       book   Classifier: ['ballpoint', 'ballpoint pen', 'ballpen', 'biro']
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:           ['english foxhound']
+
+                Giraffe_01.jpg: 
+Real:                    giraffe   Classifier: ['african hunting dog', 'hyena dog', 'cape hunting dog', 'lycaon pictus']
+
+# Total Images 4 # Matches: 0 # NOT Matches: 4
+Results Dictionary is: 
+ {'Dog_01.jpg': ['dog', "['english foxhound']", 0], 'Book_01.jpg': ['book', "['ballpoint', 'ballpoint pen', 'ballpen', 'biro']", 0], 'Dog_02.jpg': ['dog', "['english foxhound']", 0], 'Giraffe_01.jpg': ['giraffe', "['african hunting dog', 'hyena dog', 'cape hunting dog', 'lycaon pictus']", 0]}
+Key is: Dog_01.jpg. Value is:['dog', "['english foxhound']", 0]
+Key is: Book_01.jpg. Value is:['book', "['ballpoint', 'ballpoint pen', 'ballpen', 'biro']", 0]
+Key is: Dog_02.jpg. Value is:['dog', "['english foxhound']", 0]
+Key is: Giraffe_01.jpg. Value is:['giraffe', "['african hunting dog', 'hyena dog', 'cape hunting dog', 'lycaon pictus']", 0]
+Inside Adjust results
+
+
+Filename= Dog_01.jpg 
+pet_image Label= dog 
+Classifier Label= ['english foxhound'] 
+match= 0 
+LABEL is a Dog= 1 \Classifier Label is a Dog= 0
+
+Filename= Book_01.jpg 
+pet_image Label= book 
+Classifier Label= ['ballpoint', 'ballpoint pen', 'ballpen', 'biro'] 
+match= 0 
+LABEL is a Dog= 0 \Classifier Label is a Dog= 0
+
+Filename= Dog_02.jpg 
+pet_image Label= dog 
+Classifier Label= ['english foxhound'] 
+match= 0 
+LABEL is a Dog= 1 \Classifier Label is a Dog= 0
+
+Filename= Giraffe_01.jpg 
+pet_image Label= giraffe 
+Classifier Label= ['african hunting dog', 'hyena dog', 'cape hunting dog', 'lycaon pictus'] 
+match= 0 
+LABEL is a Dog= 0 \Classifier Label is a Dog= 0
+
+     MATCH:
+
+ NOT A MATCH:
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:           ['english foxhound']  
+PetLabelDog: 1  ClassLabelDog: 0
+
+                   Book_01.jpg: 
+Real:                       book   Classifier: ['ballpoint', 'ballpoint pen', 'ballpen', 'biro']  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:           ['english foxhound']  
+PetLabelDog: 1  ClassLabelDog: 0
+
+                Giraffe_01.jpg: 
+Real:                    giraffe   Classifier: ['african hunting dog', 'hyena dog', 'cape hunting dog', 'lycaon pictus']  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 4 # Matches: 0 # NOT Matches: 4
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog:   0.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog:   0.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+
+*** Results Summary for CNN Model Architecture ALEXNET ***
+N Images            :   4
+N Dog Images        :   2
+N Not-Dog Images: 2
+ 
+Key is : pct_match; Percentage is 0.0
+Key is : pct_correct_dogs; Percentage is 0.0
+Key is : pct_correct_breed; Percentage is 0.0
+Key is : pct_correct_notdogs; Percentage is 100.0
+
+INCORRECT Dog/NOT Dog Assignments:
+Pet Label: dog. Classifier Label: ['english foxhound']
+Pet Label: dog. Classifier Label: ['english foxhound']
+
+** Total Elapsed Runtime: 0:0:0
